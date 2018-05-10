@@ -1,0 +1,31 @@
+[cloudera@quickstart ~]$ cd Downloads/mongodb
+bash: cd: Downloads/mongodb: No such file or directory
+[cloudera@quickstart ~]$ cd Downloads
+[cloudera@quickstart Downloads]$ cd mongodb
+bash: cd: mongodb: No such file or directory
+[cloudera@quickstart Downloads]$ ls
+Activity - Setup Database(1).pdf  big-data-2      big-data-3
+Activity - Setup Database.pdf     big-data-2.zip  big-data-3.zip
+[cloudera@quickstart Downloads]$ cd big-data-3
+[cloudera@quickstart big-data-3]$ ls
+ad-clicks.csv                      game-clicks.csv  spark-sql
+Anaconda3-4.0.0-Linux-x86_64.sh    mongodb          spark-streaming
+Anaconda3-4.0.0-Linux-x86_64.sh.1  notebooks        spark-wordcount
+buy-clicks.csv                     setup            splunk
+final-project                      setup.sh         wget-log
+[cloudera@quickstart big-data-3]$ cd mongodb
+[cloudera@quickstart mongodb]$ mongodb/bin/mongod --dbpath db
+-------------------------------------
+
+[cloudera@quickstart ~]$ cd Downloads/big-data-
+big-data-2/     big-data-2.zip  big-data-3/     big-data-3.zip
+[cloudera@quickstart ~]$ cd Downloads/big-data-3/mongodb
+[cloudera@quickstart mongodb]$ mongol
+bash: mongo: command not found
+[cloudera@quickstart mongodb]$ mongodb/bin/mongo
+-----------
+         Select
+db.user.find({where Condition },{})
+   from User(Table)	
+> db.users.find({"tweet_followers_count" :8973882},{"user_name":1, _id :0} );
+
